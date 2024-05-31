@@ -27,10 +27,12 @@ export const DatepickerBlock = () => {
     return currentDate.getTime() < selectedDate.getTime();
   };
   return (<>
-    <div className='d-flex align-items-around justify-content-around w-75 '>
+    
+    <div className='d-flex align-items-around justify-content-around w-75 shadow border p-4 '>
+    <div className=' '>
      
-      <div>        Start Date :
-        <br />
+      <div>        <h6 className=''>Start Date : Fri May 31 2024 11:50:28</h6>
+     
         <DatePicker
           className={'fs-2'}
           onChange={(date) => setEndDate(date)}
@@ -43,8 +45,8 @@ export const DatepickerBlock = () => {
           locale="pt-BR"
             
           
-        /></div>
-      <div>        End Date :
+        /></div>  <br />
+      <div>        End Date : Fri May 31 2024 11:50:28
         <br />
         <DatePicker
           onChange={(date) => setEndDate(date)}
@@ -57,8 +59,9 @@ export const DatepickerBlock = () => {
           // showTimeInput
 
           
-    /></div>
-    </div>
+          /></div>
+           <div className='text-center'> <br /> <button className='btn btn-md rounded-pill bg-primary text-white' onClick={() => alert('lets go party')}> Submit</button></div>
+    </div></div>
   
    
     </>

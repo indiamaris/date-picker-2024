@@ -3,11 +3,12 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 
-import { MaterialUi } from "../material-ui.js";
+import { MaterialUi } from "../datePicker-material-ui.js";
 import { App } from "../App.js";
-import { DatepickerBlock  } from "../datePicker-block.js";
+import { DatepickerBlock  } from "../datePicker-block-vertical.js";
 import { DatepickerInline } from "../datePicker-inline.js";
 import { DatepickerPortalInline } from "../datePicker-portal-inline.js";
+import { DatepickerBlockVertical } from '../datePicker-block-horizontal';
 
 
 export const router = createBrowserRouter([
@@ -20,8 +21,13 @@ export const router = createBrowserRouter([
     },
     ,
     {
-        path: '/react-block',
+        path: '/react-block-vertical',
      element:<DatepickerBlock />
+    }
+            ,
+      {
+        path: '/react-block-horizontal',
+     element:<DatepickerBlockVertical/>
     }
     ,
     {
@@ -34,6 +40,8 @@ export const router = createBrowserRouter([
      element:<DatepickerPortalInline/>
     }]
     },
+
+
     
   
 ])

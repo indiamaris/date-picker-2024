@@ -41,10 +41,11 @@ export const DatepickerInline = () => {
   };
 
   return (<>
-    <div className='d-flex align-items-around justify-content-around w-75 '>
+    <div className='d-flex align-items-around justify-content-around w-100 '>
      
-      <div>        Start Date :
+      <div className='w-100 '>        Start Date :
         <br />
+          <div className='w-25 bg-info '>  
       <DatePicker
           timeClassName={handleColor}
                icon={    <i className="fa fa-calendar"></i>}
@@ -58,12 +59,12 @@ export const DatepickerInline = () => {
           locale="pt-BR"
           todayButton="Hoje"
           dayClassName={getDayClassNamed}
-                isClearable
+                // isClearable
           
         >
-          <button className='btn btn-sm btn-primary rounded-pill w-100'> Filter
-          </button>
-            </DatePicker>
+          {/* <button className='btn btn-sm btn-primary rounded-pill w-100'> Filter
+          </button> */}
+            </DatePicker></div>
 
       </div>
       <div>        End Date :
@@ -77,11 +78,11 @@ export const DatepickerInline = () => {
           showTimeSelect
           maxDate={[ new Date(), addDays(new Date(), -1) ]}
           todayButton="Hoje"
-                isClearable
+                // isClearab
           
  >
-          <button className='btn btn-sm btn-primary rounded-pill w-100'> Filter
-          </button>
+          {/* <button className='btn btn-sm btn-primary rounded-pill w-100'> Filter
+          </button> */}
             </DatePicker></div>
     </div>
   

@@ -10,15 +10,18 @@ export const App = () => {
  
   return (<>
     
-     <div className="container-fluid p-5">
+     <div className="container-fluid">
 
       <div className="row ">
         <div className="col-2 ">
-          <Navbar />
+          <div className="container-long">    <Navbar /></div>
+       
         </div>
        
         <div className="col-10">
-          <div className="card"><Outlet /></div>   </div>
+          <div className=" h-100 d-flex align-items-center justify-content-center w-100 ">
+
+            <div className="d-flex align-items-center justify-content-center  w-75 h-50   "><Outlet /></div></div>   </div>
       </div>
      
 
