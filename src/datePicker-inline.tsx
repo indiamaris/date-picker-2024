@@ -37,7 +37,7 @@ export const DatepickerInline = () => {
     };
       const getDayClassNamed = () => {
     
-    return('bg-info  border border-info')
+    return(' text-primary p-1')
   };
 
   return (<>
@@ -58,7 +58,11 @@ export const DatepickerInline = () => {
           // showTimeInput
           locale="pt-BR"
           todayButton="Hoje"
-          dayClassName={getDayClassNamed}
+            // dayClassName={getDayClassNamed}
+            // weekClassName={getDayClassNamed}
+            // monthClassName={getDayClassNamed}
+            // react-datepicker={'bg-danger'}
+            
                 // isClearable
           
         >
@@ -69,24 +73,29 @@ export const DatepickerInline = () => {
       </div>
       <div>        End Date :
         <br />
-        <DatePicker
-          icon="fa fa-calendar"
-          onChange={(dateE) => setEndDate(dateE)}
-          selected={endDate}
+   <DatePicker
+          timeClassName={handleColor}
+               icon={    <i className="fa fa-calendar"></i>}
+          onChange={(dateS) => setStartDate(dateS)}
+          selected={new Date(startDate)}
+ 
       filterTime={filterPassedTime}
         dateFormat="MMMM d, yyyy h:mm aa"
           showTimeSelect
-          maxDate={[ new Date(), addDays(new Date(), -1) ]}
+          // showTimeInput
+          locale="pt-BR"
           todayButton="Hoje"
-                // isClearab
+            dayClassName={getDayClassNamed}
+            weekClassName={getDayClassNamed}
+            monthClassName={getDayClassNamed}
+            react-datepicker={'bg-danger'}
+            
+                // isClearable
           
- >
-          {/* <button className='btn btn-sm btn-primary rounded-pill w-100'> Filter
-          </button> */}
-            </DatePicker></div>
+        />
     </div>
   
-   
+       </div>
     </>
   );
 };

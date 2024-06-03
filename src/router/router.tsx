@@ -9,6 +9,7 @@ import { DatepickerBlock  } from "../datePicker-block-vertical.js";
 import { DatepickerInline } from "../datePicker-inline.js";
 import { DatepickerPortalInline } from "../datePicker-portal-inline.js";
 import { DatepickerBlockVertical } from '../datePicker-block-horizontal';
+import { DatepickerClasses } from "../datePicker-block-classescopy.js";
 
 
 export const router = createBrowserRouter([
@@ -38,7 +39,14 @@ export const router = createBrowserRouter([
     {
         path: '/portal-inline',
      element:<DatepickerPortalInline/>
+            }
+        ,
+    {
+        path: '/react-classes',
+     element:<    DatepickerClasses/>
     }]
+
+    
     },
 
 
