@@ -459,7 +459,11 @@ i {
      background-color:rgb(255, 255, 255);
      border:none
 }
+.react-datepicker__navigation {    
+  background-color: white;    
+  border: solid white;}
 
+.react-datepicker__navigation--next--with-time{      background-color: white;    }
 
 
      .react-datepicker__day--selected{

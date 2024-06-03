@@ -44,9 +44,15 @@ export const router = createBrowserRouter([
     {
         path: '/react-classes',
      element:<    DatepickerClasses/>
+            }
+        ,
+    {
+        path: '/react-portals',
+     element:<    DatepickerPortalInline/>
     }]
 
     
+  
     },
 
 

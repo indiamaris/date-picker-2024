@@ -48,10 +48,19 @@ export const Navbar = () => {
                         <CalendarMonthIcon className="text-white" /> 
                         </div><span>  React-DP Classes DatePicker</span> </Link>
                 </li>
+                <li className="nav-item">
+                    
+    <Link to={  '/react-portals'} className="nav-link text-white p-3  "id={'contact'} ><div className="pe-3">
+                        <CalendarMonthIcon className="text-white" /> 
+                        </div><span>  Modal inline</span> </Link>
+                </li>
+           
            
 
                 {/* react-classes */}
-    </ul>
+            </ul>
+            
+           
     <hr/>
         </div>
    
